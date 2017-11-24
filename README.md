@@ -1,6 +1,6 @@
 # Swagger 2.0 [![Build Status](https://circleci.com/gh/go-swagger/go-swagger.svg?style=shield)](https://circleci.com/gh/go-swagger/go-swagger) [![Build status](https://ci.appveyor.com/api/projects/status/x377t5o9ennm847o/branch/master?svg=true)](https://ci.appveyor.com/project/casualjim/go-swagger/branch/master) [![codecov](https://codecov.io/gh/go-swagger/go-swagger/branch/master/graph/badge.svg)](https://codecov.io/gh/go-swagger/go-swagger) [![Slack Status](https://slackin.goswagger.io/badge.svg)](https://slackin.goswagger.io)
 
-[![license](http://img.shields.io/badge/license-Apache%20v2-orange.svg)](https://raw.githubusercontent.com/swagger-api/swagger-spec/master/LICENSE) [![GoDoc](https://godoc.org/github.com/go-swagger/go-swagger?status.svg)](http://godoc.org/github.com/go-swagger/go-swagger) [![GitHub version](https://badge.fury.io/gh/go-swagger%2Fgo-swagger.svg)](https://badge.fury.io/gh/go-swagger%2Fgo-swagger) [![Docker Repository on Quay](https://quay.io/repository/goswagger/swagger/status "Docker Repository on Quay")](https://quay.io/repository/goswagger/swagger)
+[![license](http://img.shields.io/badge/license-Apache%20v2-orange.svg)](https://raw.githubusercontent.com/swagger-api/swagger-spec/master/LICENSE) [![GoDoc](https://godoc.org/github.com/roscopecoltran/go-swagger?status.svg)](http://godoc.org/github.com/roscopecoltran/go-swagger) [![GitHub version](https://badge.fury.io/gh/go-swagger%2Fgo-swagger.svg)](https://badge.fury.io/gh/go-swagger%2Fgo-swagger) [![Docker Repository on Quay](https://quay.io/repository/goswagger/swagger/status "Docker Repository on Quay")](https://quay.io/repository/goswagger/swagger)
 
 Development of this toolkit is sponsored by VMware:<br>[![VMWare](https://avatars2.githubusercontent.com/u/473334?v=3&s=200)](https://vmware.github.io)  
 
@@ -44,10 +44,10 @@ Because 0.5.0 and master have diverged significantly, you should checkout the ta
 You will have to rename some imports:
 
 ```
-github.com/go-swagger/go-swagger/httpkit/validate to github.com/go-openapi/validate
-github.com/go-swagger/go-swagger/httpkit to github.com/go-openapi/runtime
+github.com/roscopecoltran/go-swagger/httpkit/validate to github.com/go-openapi/validate
+github.com/roscopecoltran/go-swagger/httpkit to github.com/go-openapi/runtime
 github.com/naoina/denco to github.com/go-openapi/runtime/middleware/denco
-github.com/go-swagger/go-swagger to github.com/go-openapi
+github.com/roscopecoltran/go-swagger to github.com/go-openapi
 ```
 
 ## Docs
@@ -78,11 +78,11 @@ brew install go-swagger
 
 You can download a binary for your platform from github:
 
-<https://github.com/go-swagger/go-swagger/releases/latest>
+<https://github.com/roscopecoltran/go-swagger/releases/latest>
 
 ```shell
 latestv=$(curl -s https://api.github.com/repos/go-swagger/go-swagger/releases/latest | jq -r .tag_name)
-curl -o /usr/local/bin/swagger -L'#' https://github.com/go-swagger/go-swagger/releases/download/$latestv/swagger_$(echo `uname`|tr '[:upper:]' '[:lower:]')_amd64
+curl -o /usr/local/bin/swagger -L'#' https://github.com/roscopecoltran/go-swagger/releases/download/$latestv/swagger_$(echo `uname`|tr '[:upper:]' '[:lower:]')_amd64
 chmod +x /usr/local/bin/swagger
 ```
 
@@ -107,7 +107,7 @@ wget https://bintray.com/go-swagger/goswagger-rpm/rpm -O bintray-go-swagger-gosw
 Install or update from source:
 
 ```
-go get -u github.com/go-swagger/go-swagger/cmd/swagger
+go get -u github.com/roscopecoltran/go-swagger/cmd/swagger
 ```
 
 The implementation also provides a number of command line tools to help working with swagger.

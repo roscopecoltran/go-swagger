@@ -20,7 +20,7 @@ import (
 	flags "github.com/jessevdk/go-flags"
 	graceful "github.com/tylerb/graceful"
 
-	"github.com/go-swagger/go-swagger/examples/oauth2/restapi/operations"
+	"github.com/roscopecoltran/go-swagger/examples/oauth2/restapi/operations"
 )
 
 const (

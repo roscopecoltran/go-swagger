@@ -20,7 +20,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/go-swagger/go-swagger/generator"
+	"github.com/roscopecoltran/go-swagger/generator"
 )
 
 // Client the command to generate a swagger client
@@ -83,7 +83,7 @@ func (c *Client) Execute(args []string) error {
 		IncludeParameters: !c.SkipOperations,
 		IncludeResponses:  !c.SkipOperations,
 		ValidateSpec:      !c.SkipValidation,
-		FlattenSpec:			 !c.SkipFlattening,
+		FlattenSpec:       !c.SkipFlattening,
 		Tags:              c.Tags,
 		IncludeSupport:    true,
 		TemplateDir:       string(c.TemplateDir),

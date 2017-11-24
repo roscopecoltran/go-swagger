@@ -13,9 +13,9 @@ import (
 	"github.com/go-openapi/swag"
 	graceful "github.com/tylerb/graceful"
 
-	"github.com/go-swagger/go-swagger/examples/oauth2/models"
-	"github.com/go-swagger/go-swagger/examples/oauth2/restapi/operations"
-	"github.com/go-swagger/go-swagger/examples/oauth2/restapi/operations/customers"
+	"github.com/roscopecoltran/go-swagger/examples/oauth2/models"
+	"github.com/roscopecoltran/go-swagger/examples/oauth2/restapi/operations"
+	"github.com/roscopecoltran/go-swagger/examples/oauth2/restapi/operations/customers"
 )
 
 // This file is safe to edit. Once it exists it will not be overwritten

@@ -5,8 +5,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/go-swagger/go-swagger/generator"
 	flags "github.com/jessevdk/go-flags"
+	"github.com/roscopecoltran/go-swagger/generator"
 	"github.com/spf13/viper"
 )
 

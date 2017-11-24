@@ -30,4 +30,4 @@
   - [Custom generation](use/template_layout.md)
     - [Custom templates](generate/templates.md)
   
-- [FAQ](https://github.com/go-swagger/go-swagger/issues?q=is%3Aissue+label%3Aquestion)
+- [FAQ](https://github.com/roscopecoltran/go-swagger/issues?q=is%3Aissue+label%3Aquestion)

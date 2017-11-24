@@ -22,8 +22,8 @@ import (
 
 	"github.com/go-openapi/loads"
 	"github.com/go-openapi/spec"
-	"github.com/go-swagger/go-swagger/scan"
 	"github.com/jessevdk/go-flags"
+	"github.com/roscopecoltran/go-swagger/scan"
 )
 
 // SpecFile command to generate a swagger spec from a go application

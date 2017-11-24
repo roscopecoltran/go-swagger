@@ -64,6 +64,39 @@ var FuncMap template.FuncMap = map[string]interface{}{
 	"upper": func(str string) string {
 		return strings.ToUpper(str)
 	},
+	"has_prefix": func(str string, arg string) bool {
+		fmt.Printf("has_prefix: str=%s, arg=%s \n", str, arg)
+		return strings.HasPrefix(str, arg)
+	},
+	"has_suffix": func(str string, arg string) bool {
+		fmt.Printf("has_suffix: str=%s, arg=%s \n", str, arg)
+		return strings.HasSuffix(str, arg)
+	},
+	"str_contains": func(str string, arg string) bool {
+		fmt.Printf("str_contains: str=%s, arg=%s \n", str, arg)
+		s := strings.Index(str, arg)
+		if s == -1 {
+			return false
+		}
+		return true
+	},
+	"str_extract": func(str string, start string, end string) string {
+		fmt.Printf("str_extract: str=%s, start=%s , end=%s \n", str, start, end)
+		// Get substring between two strings.
+		posFirst := strings.Index(str, start)
+		if posFirst == -1 {
+			return ""
+		}
+		posLast := strings.Index(str, end)
+		if posLast == -1 {
+			return ""
+		}
+		posFirstAdjusted := posFirst + len(start)
+		if posFirstAdjusted >= posLast {
+			return ""
+		}
+		return str[posFirstAdjusted:posLast]
+	},
 	"contains": func(coll []string, arg string) bool {
 		for _, v := range coll {
 			if v == arg {

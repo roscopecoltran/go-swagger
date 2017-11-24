@@ -136,7 +136,7 @@ if err := val.Validate(formats); err != nil {
 {{ template "propertyvalidator" . }}
 {{ end }}{{end}}{{if and .IsTuple .AdditionalItems }}
 // TODO: validating additional items should go here, if you see this raise an issue
-// at https://github.com/go-swagger/go-swagger/issues
+// at https://github.com/roscopecoltran/go-swagger/issues
 {{end}}{{ else }}{{ template "primitivefieldvalidator" .}}{{ end }}
 {{else if .IsCustomFormatter }}{{ template "validationCustomformat" .}}
 {{else if .IsArray }}{{ template "slicevalidator" .}}
@@ -158,7 +158,7 @@ if err := val.Validate(formats); err != nil {
 {{ template "propertyvalidator" . }}
 {{ end }}{{end}}{{if and .IsTuple .AdditionalItems }}
 // TODO: validating additional items should go here, if you see this raise an issue
-// at https://github.com/go-swagger/go-swagger/issues
+// at https://github.com/roscopecoltran/go-swagger/issues
 {{end}}{{end}}
 
   {{ end }}
@@ -198,7 +198,7 @@ if err := {{ .ReceiverName }}.validate{{ pascalize .Name }}Enum({{ if .Path }}{{
   {{end}}
   {{if and .IsTuple .AdditionalItems }}
     // TODO: validating additional items should go here, if you see this raise an issue
-    // at https://github.com/go-swagger/go-swagger/issues
+    // at https://github.com/roscopecoltran/go-swagger/issues
   {{end}}
 {{end}}
 {{define "propertyvalidator"}}

@@ -37,7 +37,7 @@ Help Options:
       -r, --copyright-file=   the file containing a copyright header for the generated source
 ```
 
-There is an example client in https://github.com/go-swagger/go-swagger/tree/master/examples/todo-list/client
+There is an example client in https://github.com/roscopecoltran/go-swagger/tree/master/examples/todo-list/client
 
 To generate a client:
 

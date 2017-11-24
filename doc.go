@@ -30,7 +30,7 @@ And it's 100% open source software.
 
 Install:
 
-		go get -u github.com/go-swagger/go-swagger/cmd/swagger
+		go get -u github.com/roscopecoltran/go-swagger/cmd/swagger
 
 The implementation also provides a number of command line tools to help working with swagger.
 
