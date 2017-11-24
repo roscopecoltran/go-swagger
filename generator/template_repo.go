@@ -15,6 +15,7 @@ import (
 
 	"github.com/go-openapi/inflect"
 	"github.com/go-openapi/swag"
+	"github.com/jinzhu/inflection"
 	"github.com/kr/pretty"
 )
 
@@ -53,6 +54,20 @@ var FuncMap template.FuncMap = map[string]interface{}{
 		}
 		return str
 	},
+	"isSingular": func(str string) bool {
+		res := inflection.Singular(str)
+		if res != str {
+			return false
+		}
+		return true
+	},
+	"isPlural": func(str string) bool {
+		res := inflection.Plural(str)
+		if res != str {
+			return false
+		}
+		return true
+	},
 	"dropPackage": func(str string) string {
 		parts := strings.Split(str, ".")
 		strlen := len(parts)
@@ -72,6 +87,12 @@ var FuncMap template.FuncMap = map[string]interface{}{
 		fmt.Printf("has_suffix: str=%s, arg=%s \n", str, arg)
 		return strings.HasSuffix(str, arg)
 	},
+	/*
+		"get_models": func(object interface, arg string) bool {
+			fmt.Printf("has_suffix: str=%s, arg=%s \n", str, arg)
+			return strings.HasSuffix(str, arg)
+		},
+	*/
 	"str_contains": func(str string, arg string) bool {
 		fmt.Printf("str_contains: str=%s, arg=%s \n", str, arg)
 		s := strings.Index(str, arg)
