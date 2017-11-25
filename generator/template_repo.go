@@ -54,6 +54,9 @@ var FuncMap template.FuncMap = map[string]interface{}{
 		}
 		return str
 	},
+	"count": func(arg []string) int {
+		return len(arg)
+	},
 	"isSingular": func(str string) bool {
 		res := inflection.Singular(str)
 		if res != str {
